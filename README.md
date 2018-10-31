@@ -27,3 +27,7 @@ Submission should be in the following format:
 }
 ```
 
+## Email
+The email that the user receives should look like this:
+
+<img width="447" alt="screen shot 2018-10-31 at 2 29 37 pm" src="https://user-images.githubusercontent.com/35884097/47816738-83cd7080-dd19-11e8-962f-3d6d3b0267fe.png">
