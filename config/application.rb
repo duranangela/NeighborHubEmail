@@ -20,6 +20,19 @@ Bundler.require(*Rails.groups)
 module HoodEmail
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
+
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins '*'
+        resource '*', headers: :any, methods: [:get, :post, :options, :delete, :patch]
+      end
+    end
+
+    config.action_dispatch.default_headers = {
+      'Access-Control-Allow-Origin' => 'https://neighborhood-kickstarter.herokuapp.com',
+      'Access-Control-Request-Method' => %w{GET POST OPTIONS}.join(",")
+    }
+
     config.load_defaults 5.2
 
     # Settings in config/environments/* take precedence over those specified here.
