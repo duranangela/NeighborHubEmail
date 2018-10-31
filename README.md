@@ -10,6 +10,7 @@ If you would like to run this project locally please follow these steps:
 - `cd NeighborHubEmail`
 - `bundle` or `bundle exec`
 - `rails s`
+
 Your project should be available at [localhost:3000](localhost:3000)
 
 If you would like to run the test suite:
