@@ -1,24 +1,33 @@
-# README
+# NeighborHubEmail
+## About
+This project is an email microservice for [NeighborHub](https://neighborhood-kickstarter.herokuapp.com/). Its sole purpose is to send an email to a user when they sign up for a new account on NeighborHub. It is deployed at https://shrieking-chupacabra-95509.herokuapp.com
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project uses Ruby on Rails - Ruby version 2.4.1 and Rails version 5.2.1.
 
-Things you may want to cover:
+## Local Setup
+If you would like to run this project locally please follow these steps:
+- `git clone git@github.com:duranangela/NeighborHubEmail.git`
+- `cd NeighborHubEmail`
+- `bundle` or `bundle exec`
+- `rails s`
 
-* Ruby version
+The project should now be available at [localhost:3000](https://localhost:3000/)
 
-* System dependencies
+If you would like to run the test suite:
+- `rspec`
 
-* Configuration
+## Endpoint
+This project has one endpoint, `POST /api/v1/notification`
+Submission should be in the following format:
+```json
+{ 
+	"user_name": "Bob",
+	"user_email": "bobjones@email.com"
+	
+}
+```
 
-* Database creation
+## Email
+The email that the user receives should look like this:
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<img width="447" alt="screen shot 2018-10-31 at 2 29 37 pm" src="https://user-images.githubusercontent.com/35884097/47816738-83cd7080-dd19-11e8-962f-3d6d3b0267fe.png">
