@@ -11,7 +11,7 @@ If you would like to run this project locally please follow these steps:
 - `bundle` or `bundle exec`
 - `rails s`
 
-Your project should be available at [localhost:3000](localhost:3000)
+Your project should be available at [localhost:3000](https://localhost:3000/)
 
 If you would like to run the test suite:
 - `rspec`
