@@ -1,4 +1,7 @@
 # NeighborHubEmail
+## Contributors
+Angela Duran, Stephen Malek, Dennis Miller, LeeLee Graham
+
 ## About
 This project is an email microservice for [NeighborHub](https://neighborhood-kickstarter.herokuapp.com/). Its sole purpose is to send an email to a user when they sign up for a new account on NeighborHub. It is deployed at https://shrieking-chupacabra-95509.herokuapp.com
 
